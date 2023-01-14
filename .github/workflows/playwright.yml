@@ -35,5 +35,5 @@ jobs:
       if: always()
       with:
         name: imagesresult
-        path: pimagesresult/
+        path: imagesresult/
         retention-days: 30
