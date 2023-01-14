@@ -1,0 +1,21 @@
+{
+  "name": "automatedtestongithubaction02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakornwrm/automatedtestongithubaction02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nakornwrm/automatedtestongithubaction02/issues"
+  },
+  "homepage": "https://github.com/nakornwrm/automatedtestongithubaction02#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  }
+}
