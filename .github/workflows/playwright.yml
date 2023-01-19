@@ -25,6 +25,9 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test
+      env:
+          username: "${{ github.event.inputs.username }}"
+          password: "${{ github.event.inputs.password }}"
     - uses: actions/upload-artifact@v3
       if: always()
       with:

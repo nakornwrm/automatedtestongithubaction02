@@ -13,11 +13,12 @@ test('Test login Identity Server Demo', async ({ page }) => {
   await expect(page).toHaveURL('https://demo.identityserver.com/Account/Login?ReturnUrl=%2Fgrants');
   await page.screenshot({ path: dir+'/02.png', fullPage: true });
   await page.getByPlaceholder('Username').click();
-  await page.getByPlaceholder('Username').fill('bob');
+  await page.getByPlaceholder('Username').fill(process.env.username);
   await page.getByPlaceholder('Username').press('Tab');
-  await page.getByPlaceholder('Password').fill('bob');
+  await page.getByPlaceholder('Password').fill(process.env.password);
   await page.screenshot({ path: dir+'/03.png', fullPage: true });
   await page.getByRole('button', { name: 'Login' }).click();
   await expect(page).toHaveURL('https://demo.identityserver.com/grants');
   await page.screenshot({ path: dir+'/04.png', fullPage: true });
 });
+
